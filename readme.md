@@ -1,5 +1,7 @@
-## Teste
-# Teste
+# Projeto de ITP T01 (2021.2).
+## Prof. Anna Giselle.
+## Alunos: Danrley Araújo e Lucas Morais.
+
 
 # OCMA
 Jogo de simulação em uma área de pesca gerenciada pelo OCMA - Órgão de Controle do Meio Ambiente.
