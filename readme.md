@@ -3,6 +3,7 @@
 ## Alunos: Danrley Araújo e Lucas Morais.
 
 O bot feito no projeto é o "perola_negra.c".
+Para rodar o código basta compilar o código usando o gcc e rodar pelo node "node ocma perola_negra"
 
 # OCMA
 Jogo de simulação em uma área de pesca gerenciada pelo OCMA - Órgão de Controle do Meio Ambiente.
