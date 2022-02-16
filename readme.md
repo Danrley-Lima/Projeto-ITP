@@ -2,7 +2,7 @@
 ## Prof. Anna Giselle.
 ## Alunos: Danrley Araújo e Lucas Morais.
 
-
+O bot feito no projeto é o "perola_negra.c".
 
 # OCMA
 Jogo de simulação em uma área de pesca gerenciada pelo OCMA - Órgão de Controle do Meio Ambiente.
