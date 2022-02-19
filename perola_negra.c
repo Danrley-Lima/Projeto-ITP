@@ -135,39 +135,7 @@ int main() {
     } else if (storage == 10) { 
       printf("%s\n", procuraPorto(cordx, cordy, seaport));
 
-    /*
-    } else if ((mapa[cordx][cordy] == 0 && mapa[cordx][cordy+1] == 21)
-    || (mapa[cordx][cordy+1] == 0 && mapa[cordx][cordy] == 21)){
-        printf("RIGHT\n");
-
-    } else if ((mapa[cordx][cordy] == 0 && mapa[cordx+1][cordy] == 21)
-    || (mapa[cordx+1][cordy] == 0 && mapa[cordx][cordy] == 21)){
-        printf("DOWN\n");
-
-    } else if ((mapa[cordx][cordy] == 0 && mapa[cordx-1][cordy] == 21)
-    || (mapa[cordx-1][cordy] == 0 && mapa[cordx][cordy] == 21)){
-        printf("UP\n");
-
-    } else if ((mapa[cordx][cordy] == 0 && mapa[cordx][cordy-1] == 21)
-    || (mapa[cordx][cordy-1] == 0 && mapa[cordx][cordy] == 21)){
-        printf("LEFT\n");
-
-    } else if ((mapa[cordx][cordy] == 0 && mapa[cordx][cordy+1] == 31)
-    || (mapa[cordx][cordy+1] == 0 && mapa[cordx][cordy] == 31)){
-        printf("RIGHT\n");
-
-    } else if ((mapa[cordx][cordy] == 0 && mapa[cordx+1][cordy] == 31)
-    || (mapa[cordx+1][cordy] == 0 && mapa[cordx][cordy] == 31)){
-        printf("DOWN\n");
-
-    } else if ((mapa[cordx][cordy] == 0 && mapa[cordx-1][cordy] == 31)
-    || (mapa[cordx-1][cordy] == 0 && mapa[cordx][cordy] == 31)){
-        printf("UP\n");
-
-    } else if ((mapa[cordx][cordy] == 0 && mapa[cordx][cordy-1] == 31)
-    || (mapa[cordx][cordy-1] == 0 && mapa[cordx][cordy] == 31)){
-        printf("LEFT\n");
-    */
+      
     //Verifica todos os lados ao redor do barco, se houver algum peixe (robalo) e não tiver nenhum outro barco, ele se movimenta.
     
     } else if (cordy - 1 > 0 
@@ -194,6 +162,7 @@ int main() {
     && mapa_copia[cordx+1][cordy] != 2){
         printf("DOWN\n");
 
+      
     // VERIFICAR DOIS ESPAÇOS AOS LADOS
 
     } else if (cordy - 1 > 0 
@@ -220,51 +189,6 @@ int main() {
     && mapa_copia[cordx+1][cordy-1] != 2){
         printf("DOWN\n");
     
-    // VERIFICAR TRÊS ESPAÇOS AOS LADOS
-    /*
-    } else if (cordy - 1 > 0 
-    && mapa[cordx][cordy-3] > 31 
-    && mapa[cordx][cordy-3] < 40 
-    && mapa_copia[cordx][cordy-1] != 2 
-    && cordy + 1 < w 
-    && mapa[cordx][cordy+3] > 31 
-    && mapa[cordx][cordy+3] < 40 
-    && mapa_copia[cordx][cordy+1] != 2){
-        printf("LEFT\n");
-
-    } else if (cordx + 1 < h 
-    && mapa[cordx+3][cordy] > 31 
-    && mapa[cordx+3][cordy] < 40 
-    && mapa_copia[cordx+1][cordy-1] != 2 
-    && cordx - 1 > 0 
-    && mapa[cordx-3][cordy] > 31 
-    && mapa[cordx-3][cordy] < 40 
-    && mapa_copia[cordx-1][cordy+1] != 2){
-        printf("DOWN\n");
-
-    /*
-    // VERIFICAR DIAGONAIS
-
-    } else if (cordy - 1 > 0 
-    && mapa[cordx-1][cordy-1] > 31 
-    && mapa[cordx-1][cordy-1] < 40 
-    && mapa_copia[cordx-1][cordy-1] != 2){
-        printf("LEFT\n");
-    } else if (cordy + 1 < w 
-    && mapa[cordx+1][cordy+1] > 31 
-    && mapa[cordx+1][cordy+1] < 40 
-    && mapa_copia[cordx+1][cordy+1] != 2){
-        printf("RIGHT\n");
-    } else if (cordx - 1 > 0 
-    && mapa[cordx-1][cordy+1] > 31 
-    && mapa[cordx][cordy+1] < 40 
-    && mapa_copia[cordx-1][cordy+1] != 2){
-        printf("UP\n");
-    } else if (cordx + 1 < h 
-    && mapa[cordx+1][cordy-1] > 31 
-    && mapa[cordx][cordy-1] < 40 
-    && mapa_copia[cordx+1][cordy-1] != 2){
-        printf("DOWN\n");*/
 
     //Verifica todos os lados ao redor do barco, se houver algum peixe (cioba) e não tiver nenhum outro barco, ele se movimenta.
 
@@ -292,6 +216,7 @@ int main() {
     && mapa_copia[cordx+1][cordy] != 2){
         printf("DOWN\n");
 
+      
     // VERIFICAR DOIS ESPAÇOS AOS LADOS
     
     } else if (cordy - 1 > 0 
@@ -318,6 +243,7 @@ int main() {
     && mapa_copia[cordx+1][cordy-1] != 2){
         printf("DOWN\n");
     
+      
     // VERIFICAR TRÊS ESPAÇOS AOS LADOS
     
     } else if (cordy - 1 > 0 
@@ -340,28 +266,6 @@ int main() {
     && mapa_copia[cordx][cordy+1] != 2){
         printf("RIGHT\n");
     
-    // VERIFICAR DIAGONAIS
-
-    /*} else if (cordy - 1 > 0 
-    && mapa[cordx-1][cordy-1] > 21 
-    && mapa[cordx-1][cordy-1] < 30 
-    && mapa_copia[cordx-1][cordy-1] != 2){
-        printf("LEFT\n");
-    } else if (cordy + 1 < w 
-    && mapa[cordx+1][cordy+1] > 21 
-    && mapa[cordx+1][cordy+1] < 30 
-    && mapa_copia[cordx+1][cordy+1] != 2){
-        printf("RIGHT\n");
-    } else if (cordx - 1 > 0 
-    && mapa[cordx-1][cordy+1] > 21 
-    && mapa[cordx][cordy+1] < 30 
-    && mapa_copia[cordx-1][cordy+1] != 2){
-        printf("UP\n");
-    } else if (cordx + 1 < h 
-    && mapa[cordx+1][cordy-1] > 21 
-    && mapa[cordx][cordy-1] < 30 
-    && mapa_copia[cordx+1][cordy-1] != 2){
-        printf("DOWN\n");*/
 
     //Verifica todos os lados ao redor do barco, se houver algum peixe (tainha) e não tiver nenhum outro barco, ele se movimenta.
 
@@ -389,6 +293,7 @@ int main() {
     && mapa_copia[cordx+1][cordy] != 2){
         printf("DOWN\n");
 
+      
     // VERIFICAR DOIS ESPAÇOS AOS LADOS
     
     } else if (cordy - 1 > 0 
@@ -435,33 +340,8 @@ int main() {
     && mapa_copia[cordx+1][cordy-1] != 2){
         printf("DOWN\n");
     
-    // VERIFICAR TRÊS ESPAÇOS AOS LADOS
 
-    /*    
-    // VERIFICAR DIAGONAIS
-    
-    } else if (cordy - 1 > 0 
-    && mapa[cordx-2][cordy-2] > 11 
-    && mapa[cordx-2][cordy-2] < 20 
-    && mapa_copia[cordx-2][cordy-2] != 2){
-        printf("LEFT\n");
-    } else if (cordy + 1 < w 
-    && mapa[cordx+2][cordy+2] > 11 
-    && mapa[cordx+2][cordy+2] < 20 
-    && mapa_copia[cordx+2][cordy+2] != 2){
-        printf("RIGHT\n");
-    } else if (cordx - 1 > 0 
-    && mapa[cordx-2][cordy+2] > 11 
-    && mapa[cordx-2][cordy+2] < 20 
-    && mapa_copia[cordx-2][cordy+2] != 2){
-        printf("UP\n");
-    } else if (cordx + 1 < h 
-    && mapa[cordx+2][cordy-2] > 11 
-    && mapa[cordx+2][cordy-2] < 20 
-    && mapa_copia[cordx+2][cordy-2] != 2){
-        printf("DOWN\n");*/
-
-    // Aleatório. PRECISA MUUUUUUUUUUUDAAAAAAAAAAAAAAR
+    // Aleatório.
     
     } else if (cordy - 1 > 0 
     && random == 0 
